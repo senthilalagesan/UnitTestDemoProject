@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://www.example.org/schema/1590110348457" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://www.example.org/schema/1590110348457">
+  <element name="getCustomersByCountryCodeRequest">
+    <complexType>
+      <sequence>
+        <element name="countryCode" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+  <element name="getCustomersByCountryCodeResponse">
+    <complexType>
+      <sequence>
+      	<element name="countryname" type="string"/>
+      	<element name="phonecode" type="string"/>
+      	<element maxOccurs="unbounded" minOccurs="0" name="customername" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operationRequest">
+    <complexType>
+      <sequence>
+        <element name="in" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+    <element name="operationResponse">
+    <complexType>
+      <sequence>
+        <element name="out" type="string"/>
+      </sequence>
+    </complexType>
+  </element>
+</schema>

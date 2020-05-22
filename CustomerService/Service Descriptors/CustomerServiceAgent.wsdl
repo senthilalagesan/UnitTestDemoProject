@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wsdl:definitions xmlns:extns="http://www.example.org/schema/1590110348457" xmlns:tns="http://www.example.org/wsdl/1590110348358" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="CustomerServiceAgent" targetNamespace="http://www.example.org/wsdl/1590110348358">
+  <wsdl:import namespace="http://www.example.org/schema/1590110348457"/>
+  <wsdl:message name="getCustomersByCountryCodeRequest">
+    <wsdl:part element="extns:getCustomersByCountryCodeRequest" name="parameters"/>
+  </wsdl:message>
+  <wsdl:message name="getCustomersByCountryCodeResponse">
+    <wsdl:part element="extns:getCustomersByCountryCodeResponse" name="parameters"/>
+  </wsdl:message>
+    <wsdl:portType name="CustomerServiceAgent">
+    <wsdl:operation name="getCustomersByCountryCode">
+      <wsdl:input message="tns:getCustomersByCountryCodeRequest" name="getCustomersByCountryCodeInput"/>
+      <wsdl:output message="tns:getCustomersByCountryCodeResponse" name="getCustomersByCountryCodeOutput"/>
+    </wsdl:operation>
+    </wsdl:portType>
+</wsdl:definitions>
