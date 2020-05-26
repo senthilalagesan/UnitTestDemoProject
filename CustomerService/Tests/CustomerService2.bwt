@@ -13,7 +13,7 @@
         <informations Name="input" nameSpace="http://www.example.org/schema/1590110348457">
           <nameSpaces prefix="tns" nameSapce="http://www.example.org/schema/1590110348457"/>
           <Parameter Name="tns:getCustomersByCountryCodeRequest">
-            <parameters Name="countryCode" Value="US" type="string"/>
+            <parameters Name="countryCode" Value="US1" type="string"/>
           </Parameter>
         </informations>
       </Inputs>
